@@ -60,7 +60,7 @@
     <property name="db.username" value="root"/>
     <property name="db.password" value=""/>
     <property name="db.name" value="govcms_drupal_7"/>
-    <property name="db.host" value="localhost"/>
+    <property name="db.host" value="mysql"/>
     <property name="db.port" value="3306"/>
     <property name="account.name" value="admin"/>
     <property name="account.password" value="password"/>
