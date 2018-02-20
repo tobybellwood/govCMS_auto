@@ -9,6 +9,7 @@ default:
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\DrushContext
         - Drupal\DrupalExtension\Context\MarkupContext
+        - Behat\MinkExtension\Context\MinkContext
         - FeatureContext
       paths:
         features:                 %paths.base%/features
@@ -17,8 +18,9 @@ default:
   extensions:
     Behat\MinkExtension:
       goutte:                     ~
+      base_url:                   "http://apache24"
       selenium2:
-        wd_host:                  "http://localhost:4444/wd/hub"
+        wd_host:                  "http://selenium:4444/wd/hub"
       javascript_session:         selenium2
       files_path:                 %paths.base%/files
     Drupal\DrupalExtension:
@@ -83,4 +85,3 @@ drush:
 
 imports:
   - behat.govcms.yml
-  - behat.local.yml
