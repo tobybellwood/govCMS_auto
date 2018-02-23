@@ -31,7 +31,7 @@ default:
       blackbox:                   ~
       api_driver:                 "drupal"
       drupal:
-        drupal_root:              ../../docroot
+        drupal_root:              ../../../docroot
       drush:
         root:                     ../../docroot
       selectors:
